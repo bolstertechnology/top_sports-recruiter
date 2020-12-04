@@ -4,7 +4,7 @@ import constants from '../constants';
 
 export default class Button extends Component {
   render() {
-    let {title,onPress} = this.props;
+    let {title, onPress} = this.props;
 
     return (
       <TouchableOpacity onPress={onPress} style={styles.ButtonStyle}>
