@@ -15,14 +15,21 @@ const routes = {
     screen: Home,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontWeight: focused ? 'bold' : '600',
-            fontSize: 10,
-          }}>
-          HOME
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.home}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontWeight: focused ? 'bold' : '600',
+              fontSize: 10,
+            }}>
+            HOME
+          </Text>
+        </View>
       ),
     }),
   },
@@ -31,14 +38,21 @@ const routes = {
     screen: Profile,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontWeight: focused ? 'bold' : '600',
-            fontSize: 10,
-          }}>
-          PROFILE
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.profile}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontWeight: focused ? 'bold' : '600',
+              fontSize: 10,
+            }}>
+            PROFILE
+          </Text>
+        </View>
       ),
     }),
   },
@@ -47,16 +61,23 @@ const routes = {
     screen: FindPlayer,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontWeight: focused ? 'bold' : '600',
-            fontSize: 10,
-            width: 120,
-            textAlign: 'center',
-          }}>
-          FIND PLAYERS
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.findPlayer}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontWeight: focused ? 'bold' : '600',
+              fontSize: 10,
+              width: 120,
+              textAlign: 'center',
+            }}>
+            FIND PLAYERS
+          </Text>
+        </View>
       ),
     }),
   },
@@ -65,14 +86,21 @@ const routes = {
     screen: Videos,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontWeight: focused ? 'bold' : '600',
-            fontSize: 10,
-          }}>
-          VIDEOS
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.videos}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontWeight: focused ? 'bold' : '600',
+              fontSize: 10,
+            }}>
+            VIDEOS
+          </Text>
+        </View>
       ),
     }),
   },
@@ -81,14 +109,21 @@ const routes = {
     screen: Messages,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontSize: 10,
-            fontWeight: focused ? 'bold' : '600',
-          }}>
-          MESSAGES
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.messages}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontSize: 10,
+              fontWeight: focused ? 'bold' : '600',
+            }}>
+            MESSAGES
+          </Text>
+        </View>
       ),
     }),
   },
@@ -97,14 +132,21 @@ const routes = {
     screen: Support,
     navigationOptions: () => ({
       tabBarIcon: ({focused}) => (
-        <Text
-          style={{
-            color: focused ? '#fff' : '#ccc',
-            fontSize: 10,
-            fontWeight: focused ? 'bold' : '600',
-          }}>
-          SUPPORT
-        </Text>
+        <View style={styles.tabView}>
+          <Image
+            style={styles.tabIcon}
+            source={constants.Images.support}
+            resizeMode={'contain'}
+          />
+          <Text
+            style={{
+              color: focused ? '#fff' : '#ccc',
+              fontSize: 10,
+              fontWeight: focused ? 'bold' : '600',
+            }}>
+            SUPPORT
+          </Text>
+        </View>
       ),
     }),
   },
@@ -125,6 +167,16 @@ const tabBarConfiguration = {
   },
   initialRouteName: 'Home',
 };
+
+const styles = StyleSheet.create({
+  tabView: {
+    alignItems: 'center',
+  },
+  tabIcon: {
+    height: (constants.BaseStyle.DEVICE_HEIGHT / 100) * 5,
+    width: (constants.BaseStyle.DEVICE_WIDTH / 100) * 5,
+  },
+});
 
 const HomeNavigator = createBottomTabNavigator(routes, tabBarConfiguration);
 

@@ -13,7 +13,7 @@ const AppNavigator = createStackNavigator(
     ForgotPasswordScreen: {screen: ForgotPassword},
   },
   {
-    initialRouteName: 'ForgotPasswordScreen',
+    initialRouteName: 'HomeScreen',
     defaultNavigationOptions: {
       headerShown: false,
     },

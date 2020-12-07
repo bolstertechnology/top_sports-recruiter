@@ -7,4 +7,10 @@ module.exports = {
   menu: require('../assets/icons/menu.png'),
   search: require('../assets/icons/search.png'),
   background: require('../assets/images/back.png'),
+  home: require('../assets/icons/home.png'),
+  findPlayer: require('../assets/icons/findPlayer.png'),
+  messages: require('../assets/icons/messages.png'),
+  videos: require('../assets/icons/videos.png'),
+  support: require('../assets/icons/support.png'),
+  profile: require('../assets/icons/profile.png'),
 };
