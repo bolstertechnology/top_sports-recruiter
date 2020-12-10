@@ -6,7 +6,7 @@ import TextInput from '../../components/TextInput';
 import CommonButton from '../../components/Button';
 
 export default class Login extends Component {
-  render() {
+  render() { 
     return (
       <View style={styles.MainContainer}>
         <View style={styles.LogoContainer}>
@@ -24,10 +24,12 @@ export default class Login extends Component {
         <View style={[styles.ButtonContainer]}>
           <CommonButton title="SIGN EMAIL" />
           <View style={styles.forgotOPtions}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('LoginScreen')}>
               <Text style={styles.forgotOptText}>Sign in |</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('SignupScreen')}>
               <Text style={styles.forgotOptText}> Sign Up</Text>
             </TouchableOpacity>
           </View>

@@ -9,17 +9,25 @@ import {
   ImageBackground,
 } from 'react-native';
 import constants from '../../constants';
+import {DrawerActions} from 'react-navigation-drawer';
+
 
 export default class Home extends Component {
   render() {
+    let {navigation} = this.props;
     return (
       <View style={styles.MainContainer}>
         <View style={styles.HeaderContainer}>
-          <Image
-            style={styles.MenuIcon}
-            source={constants.Images.menu}
-            resizeMode="contain"
-          />
+          <TouchableOpacity
+            onPress={() => {
+              navigation.dispatch(DrawerActions.openDrawer());
+            }}>
+            <Image
+              style={styles.MenuIcon}
+              source={constants.Images.menu}
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
           <Text style={styles.PageTitle}>Home</Text>
         </View>
         <View style={styles.searchContainer}>
@@ -72,6 +80,8 @@ export default class Home extends Component {
     );
   }
 }
+
+
 
 const styles = StyleSheet.create({
   MainContainer: {

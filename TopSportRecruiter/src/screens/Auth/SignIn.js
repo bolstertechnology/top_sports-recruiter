@@ -21,12 +21,15 @@ export default class Login extends Component {
         </View>
         <View style={styles.InputsContainer}>
           <TextInput source={constants.Images.Eye} placeholder={'Password'} />
-          <TouchableOpacity style={styles.ForgotContainer}>
+          <TouchableOpacity style={styles.ForgotContainer} onPress={()=> this.props.navigation.navigate("ForgotPasswordScreen")}>
             <Text style={styles.ForgotText}>Forgot your password?</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.ButtonContainer}>
-          <CommonButton title="SIGN IN" />
+          <CommonButton
+            title="SIGN IN"
+            onPress={() => this.props.navigation.replace('Drawer')}
+          />
           <View style={styles.SignupOpt}>
             <TouchableOpacity
               onPress={() => this.props.navigation.navigate('SignupScreen')}
