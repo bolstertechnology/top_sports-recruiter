@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import Navigator from './src/navigator/Navigator';
+import {View, Image, Text, TouchableOpacity} from 'react-native';
+import Navigator from './src/Navigator/Navigator';
 
 export default class App extends Component {
   render() {
-    return <Navigator />;
+    return (
+      <Navigator />
+    );
   }
 }

@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.topsportrecruiter"
+        applicationId "com.top_sports_recruiter_app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

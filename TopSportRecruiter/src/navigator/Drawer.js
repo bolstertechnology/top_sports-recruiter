@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from '../screens/Home/index';
-import TabNavigator from '../navigator/TabNavigation';
+import Home from '../Screens/Home/index';
+import TabNavigator from '../Navigator/TabNavigation';
 import DrawerContent from './DrawerContent';
 import {createDrawerNavigator} from 'react-navigation-drawer';
-import constants from '../constants';
+import constants from '../Constants';
 
 const DrawerNavigator = createDrawerNavigator(
   {

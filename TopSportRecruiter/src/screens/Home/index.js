@@ -8,7 +8,7 @@ import {
   TextInput,
   ImageBackground,
 } from 'react-native';
-import constants from '../../constants';
+import constants from '../../Constants';
 import {DrawerActions} from 'react-navigation-drawer';
 
 

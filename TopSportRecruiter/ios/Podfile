@@ -3,12 +3,17 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'TopSportRecruiter' do
+target 'Top_Sports_Recruiter_App' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'TopSportRecruiterTests' do
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  target 'Top_Sports_Recruiter_AppTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +28,10 @@ target 'TopSportRecruiter' do
   end
 end
 
-target 'TopSportRecruiter-tvOS' do
-  # Pods for TopSportRecruiter-tvOS
+target 'Top_Sports_Recruiter_App-tvOS' do
+  # Pods for Top_Sports_Recruiter_App-tvOS
 
-  target 'TopSportRecruiter-tvOSTests' do
+  target 'Top_Sports_Recruiter_App-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

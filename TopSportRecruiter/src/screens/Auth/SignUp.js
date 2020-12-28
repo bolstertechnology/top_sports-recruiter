@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {View, Image, Text, TouchableOpacity} from 'react-native';
+import {View, Image, Text, TouchableOpacity,TextInput} from 'react-native';
 import styles from './style';
-import constants from '../../constants';
-import TextInput from '../../components/TextInput';
-import CommonButton from '../../components/Button';
+import constants from '../../Constants';
+import TextField from '../../Components/TextField';
+import Button from '../../Components/Button';
 
 export default class Signup extends Component {
   render() {
@@ -36,7 +36,7 @@ export default class Signup extends Component {
             styles.ButtonContainer,
             {marginTop: (constants.BaseStyle.DEVICE_HEIGHT / 100) * 10},
           ]}>
-          <CommonButton title="SIGN UP" />
+          <Button title="SIGN UP" />
           <View style={styles.SignupOpt}>
             <TouchableOpacity
               onPress={() => this.props.navigation.navigate('LoginScreen')}

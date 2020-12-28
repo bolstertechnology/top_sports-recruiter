@@ -1,9 +1,9 @@
 import {createAppContainer, withNavigation} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import Login from '../screens/Auth/SignIn';
-import Signup from '../screens/Auth/SignUp';
+import Login from '../Screens/Auth/SignIn';
+import Signup from '../Screens/Auth/SignUp';
 import TabNavigator from './TabNavigation';
-import ForgotPassword from '../screens/Auth/ForgotPassword';
+import ForgotPassword from '../Screens/Auth/ForgotPassword';
 import Drawer from './Drawer';
 
 const AppNavigator = createStackNavigator(

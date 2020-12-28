@@ -1,14 +1,14 @@
 import React from 'react';
 import {createAppContainer, withNavigation} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-import constants from '../constants';
+import constants from '../Constants';
 import {View, Text, Image, StyleSheet} from 'react-native';
-import Home from '../screens/Home/index';
-import Profile from '../screens/Home/profile';
-import FindPlayer from '../screens/Home/findplayer';
-import Videos from '../screens/Home/videos';
-import Messages from '../screens/Home/messages';
-import Support from '../screens/Home/support';
+import Home from '../Screens/Home/index';
+import Profile from '../Screens/Home/profile';
+import FindPlayer from '../Screens/Home/findplayer';
+import Videos from '../Screens/Home/videos';
+import Messages from '../Screens/Home/messages';
+import Support from '../Screens/Home/support';
 
 const routes = {
   Home: {

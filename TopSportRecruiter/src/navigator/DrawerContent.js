@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
 import {withNavigation} from 'react-navigation';
-import constants from '../constants';
+import constants from '../Constants';
 
 class DrawerContent extends Component {
   render() {
